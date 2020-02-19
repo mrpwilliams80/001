@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+    <head>
+        <title>001-html</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Paul Williams">
+        <meta name="keywords" content="html, tags, refernce, examples, unformated">
+        <meta name="description" content="unformated examples of html tags">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <section id="inro">
+            <h1>001-html</h1>
+            <p>all tags for html5 presented in alphabetical order by usage catagory with examples. Many tags in the html5 specification are used to provide somantic meaning to the elements of the page. The reason for this is three fold:</p>
+                <li>to reduce and over use of the <code>&lt;div&gt;</code> element</li>
+                <li>help the browser understand the meaning of content rather than just display it</li>
+                <li>help search engines to read and find the required information faster</li>
+            <p>While it is still posssible (and sometimes neccesaary) to use <code>&lt;div&gt;</code> tags, whever an alternative tag would provide more meaning it is recomended to use that instead.</p>
+            <p>Definitions come from <a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php">TutorialRepublic</a> [Feb 2020].</p>
+        </section>
+
+        <section id="structureTags">
+            <h3>Structural Tags</h3>
+            <dl>
+                <dt><code>&lt;a&gt;</code></dt>
+                <dd>- The a  in this tag is short for 'anchor'. Defines a hyperlink for web navigation. </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;a href="http://www.google.com"&gt;a link to google&lt;/a&gt;</code> gives &rarr;
+                        <br>
+                        <a href="http://www.google.com">a link to google</a>
+                    </detailes>
+                </dd>
+
+                <dt><code>&lt;article&gt;</code></dt>
+                <dd>- This tag is used to define articles. It does not have any specific formating. Rather, it is used to give somantic meaning to html code</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;article&gt;this text would be given somantic meaning through the use of the article tag&lt;/article&gt;</code> gives &rarr;
+                        <br>
+                        <article>this text has be given somantic meaning as an article through the use of the article tag</article>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;aside&gt;</code></dt>
+                <dd>- This tag is used to define a section that is only loosely related to the content around it. It does not have any specific formating. Rather, it is used to give somantic meaning to html code</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;aside&gt;this text has be given somantic meaning as an aside through the use of the aside tag&lt;/aside&gt;</code> gives &rarr;
+                        <br>
+                        <aside>this text has be given somantic meaning as an aside through the use of the aside tag</aside>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;body&gt;</code></dt>
+                <dd>- This element represents the main content of the document. It typically wraps around all of the content that will be displayed on screen, such as headings, paragraphs, hyperlinks, images, forms, tables, lists, videos and so on.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;body&gt;this would be the main body of a web page&lt;/body&gt;</code> gives &rarr;
+                        <br>
+                        <body>this would be the main body of a web page</body>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;br&gt;</code></dt>
+                <dd>- Produces a single line break. Does not need a closing tag</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>first line&lt;br&gt;second line</code> gives &rarr;
+                        <br>
+                        first line <br>second line
+                    </details>
+                </dd>
+
+                <dt><code>&lt;details&gt;</code></dt>
+                <dd>- Represents a control from which the user can obtain additional information on-demand. It can be used to create an interactive widget that the user can show or hide (like expand and collapse) to retrieve the additional information or controls. Any sort of element can be placed inside the details element. <span>NOTE: this feature is not supported in the Edge browser, I have not tested with IE or Safari</span></dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;details&gt;&lt;summary&gt;Brief Info&lt;/summary&gt;&lt;p&gt;a more detailed explaination.&lt;/p&gt&lt;/details&gt;</code> gives &rarr;
+                        <br>
+                        <details><summary>Brief Info</summary><p>a more detailed explaination.</p></details>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;div&gt;</code></dt>
+                <dd>- Short for 'division', this is a generic container for flow content, which has no default rendering or meaning.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;div&gt;this content is difined inside it's own division&lt;/div&gt;</code> gives &rarr;
+                        <br>
+                        <div>this content is difined inside it's own division</div>
+                    </details>
+                </dd>
+                
+                <dt><code>&lt;h1&gt; &rarr; &lt;h6&gt;</code></dt>
+                <dd>- Heading tags are used to define headings from most important <code>&lt;h1>&gt;</code> to least important <code>&lt;h6>&gt;</code> </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code> <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code> <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code> <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code> <code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code> <code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code> gives &rarr;
+                        <br>
+                        <h1>Heading 1</h1> <h2>Heading 2</h2> <h3>Heading 3</h3> <h4>Heading 5</h4> <h5>Heading 5</h5> <h6>Heading 6</h6>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;head&gt;</code></dt>
+                <dd>- Defines the head portion of the document that contains information about the document.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;head&gt;
+                            &lt;meta charset="utf-8"&gt;
+                            &lt;/head&gt;</code> could be used to tell the browser to use the 'utf-8' character set. Nothing inside the head is displayed in the main page. the title tag sets the title at the top of the browser.
+                    </details>
+                </dd>
+
+                <dt><code>&lt;header&gt;</code></dt>
+                <dd>- Represents the header of a document or a section. A header should contain title and heading information about the related content</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;header&gt;This section has been defined as a header within this document&lt;/header&gt;</code> gives &rarr;
+                        <br>
+                        <header>This section has been defined as a header within this document</header>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;hgroup&gt;</code></dt>
+                <dd> - Defines a group of headings. </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;hgroup&gt;&lt;h1>&gt;This is a main heading&lt;/h1&gt;&lt;h2>&gt;This is a sub-heading&lt;/h2&gt;&lt;/hgroup&gt;</code> gives &rarr;
+                        <br>
+                        <hgroup><h1>This is a main heading</h1><h2>This is a sub-heading</h2></hgroup>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;hr&gt;</code></dt>
+                <dd>- Draws a horizontal line. Does not need a closing tag</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;hr&gt;</code> gives &rarr;
+                        <br>
+                        <hr>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;html&gt;</code></dt>
+                <dd>- Defines the root of an html document.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;html&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;head&gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    header details would go here<br> &nbsp;&nbsp;&nbsp;
+                                &lt;/head&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;body&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    the main part of the document would go here<br> &nbsp;&nbsp;&nbsp;
+                                &lt;/body&gt; <br>
+                            &lt;/html&gt;</code><br>
+                            this is an example of a very basic html layout. You shouldn't re-declare html tags inside html tags, howver, this document (obviously) has a pair of root html tags.
+                    </details>
+                </dd>
+
+                <dt><code>&lt;footer&gt;</code></dt>
+                <dd>- Represents the header of a document or a section. A footer typically contains information about the author of the document, copyright information, links to related documents etc.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;footer&gt;&amp;copy; 2020 Paul Williams&lt;/footer&gt;</code> gives &rarr;
+                        <br>
+                        <footer>&copy; 2020 Paul Williams</footer>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;nav&gt;</code></dt>
+                <dd>- This element defines a section of navigation links (i.e. links to other pages or to parts within the page itself) in a document. New in html5 the purpose is largely semantic</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;nav&gt; &lt;a href="#"&gt;Nav-Link A&lt;/a&gt; &lt;a href="#"&gt;Nav-Link B&lt;/a&gt; &lt;a href="#"&gt;Nav-Link C&lt;/a&gt; &lt;/nav&gt;</code> gives &rarr;
+                        <br>
+                        <nav><a href="#">Nav-Link A</a> <a href="#">Nav-Link B</a> <a href="#">Nav-Link C</a></nav>
+                    </details>
+                </dd>
+
+
+                <dt><code>&lt;p&gt;</code></dt>
+                <dd>- Defines a paragraph</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;This a a new paragraph, all by itself *sniff*&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>This a a new paragraph, all by itself *sniff*</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;section&gt;</code></dt>
+                <dd>- Defines a section of the document. New in html5 used to give samantic meaning</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;section&gt;This text is defined as existing in its own section&lt;/section&gt;</code> gives &rarr;
+                        <br>
+                        <section>This text is defined as existing in its own section</section>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;span&gt;</code></dt>
+                <dd>- Defines a generic inline container for phrasing content, which has no default rendering or meaning. It is extensively used to define the structural sections of a document and to layout a web page using CSS.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;span&gt;This text is in it's own span&lt;/span&gt;</code> gives &rarr;
+                        <br>
+                        <span>This text is in it's own span</span>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;summary&gt;</code></dt>
+                <dd>- Defines a summary for the <code>&lt;details&gt;</code> tag </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;details&gt;&lt;summary&gt;This is inside the summary tag&lt;/summary&gt;&lt;p&gt;this is after the summary tag&lt;/p&gt&lt;/details&gt;</code> gives &rarr;
+                        <br>
+                        <details><summary>This is inside the summary tag</summary><p>this is after the summary tag</p></details>
+                    </details>
+                </dd>
+            </dl>
+        </section>
+
+        <section id="metadataTags">
+            <h3>Metadata Tags</h3>
+            <dl>
+                <dt><code>&lt;base&gt;</code></dt>
+                <dd>- Defines the base URL for all linked objects on a page. Provides a common target to for all relative URLs contained within a document. There must be no more than one <code>&lt;base&gt;</code> tag per document.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;base href="https://www.tutorialrepublic.com/"&gt; &lt;a href="css-tutorial/"&gt;Learn CSS&lt;/a&gt;</code> gives &rarr;
+                        <br>
+                        <base href="https://www.tutorialrepublic.com/"> <a href="css-tutorial/">Learn CSS</a>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;link&gt;</code></dt>
+                <dd>- Defines the relationship between the current document and an external resource. This element may only appear in the head section of a document, although it may appear any number of times. It is mostly used in linking style sheets to the HTML document.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;link rel="stylesheet" href="default.css"&gt;</code> would link to a css style sheet named 'default.css' in the same directory as the html file that contains it.  
+                    </details>
+                </dd>
+
+                <dt><code>&lt;meta&gt;</code></dt>
+                <dd>- Provides structured metadata about the document content. This element may only appear in the head section of a document, although it may appear any number of times. It is commonly used to provide keywords, descriptions, author information, and other metadata that may be used by the browser to render the document correctly, or it may be used by the search engines for indexing purposes.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;meta charset="UTF-8"&gt; &rarr; Define the character encoding for the document<br>
+                            &lt;meta name="author" content="John Smith"&gt; &rarr; Defines the author name of the document<br>
+                            &lt;meta name="keywords" content="HTML,CSS,Tutorials,References,Examples"&gt; &rarr; Defines a list of keywords for search engines<br>
+                            &lt;meta name="description" content="HTML/CSS Tutorials and References"&gt; &rarr; Define a brief summery/description of the web page<br>
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; &rarr; Enable zooming in mobile devices<br>
+                        </code>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;style&gt;</code></dt>
+                <dd>- Inserts style information (commonly CSS) into the head of a document. This tag is used to define style rules at a page-level (i.e. within the document). The rules inside the element tell a browser how to present the document. You can place any number of style elements in a document, but it must appear inside the head section</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;style type="text/css"&gt;h1 {color: #993434;}&lt;/style&gt;</code> would set an h1 elements colour as shown &rarr;
+                        <br>
+                        <h1 style="color: #993434;">Colour changed to #993434</h1>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;title&gt;</code></dt>
+                <dd>- Defines a title for the document. This element should be the first element defined in the head section of the document. The title should be meaningful because it summarizes the content or purpose of the document.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;title&gt;Title&lt;/title&gt;</code> would set the title of a page to 'Title'
+                    </details>
+                </dd>
+            </dl>
+        </section>
+
+        <section id="formTags">
+            <h3>Form Tags</h3>
+            <dl>
+                <dt><code>&lt;button&gt;</code></dt>
+                <dd>- Creates a clickable button. Buttons created with this element function just like buttons created with the input element, but they offer richer rendering possibilities; as you can put content, like text or images inside the button element.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;button&gt;Text&lt;/button&gt;</code> gives &rarr;
+                        <br>
+                        <button>Text</button>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;datalist&gt;</code></dt>
+                <dd>- New in html5, represents a set of pre-defined options for an <code>&lt;input&gt;</code> element. It can be used to provide the quick choices for an input field like an "autocomplete" feature. Its not only saves the time of a user but also reduces errors, because the user has less likelihood of making a spelling mistake. The list attribute of the input element is used to bind it together with a datalist element. </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;p&gt;Enter your favorite browser name:&lt;/p&gt;<br>
+                            &lt;input type="text" list="browsers"&gt;<br>
+                            &lt;datalist id="browsers"&gt;<br>  &nbsp;&nbsp;&nbsp;
+                                &lt;option value="Firefox"&gt;<br>  &nbsp;&nbsp;&nbsp;
+                                &lt;option value="Chrome"&gt;<br>  &nbsp;&nbsp;&nbsp;
+                                &lt;option value="Internet Explorer"&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;option value="Opera"&gt;<br>  &nbsp;&nbsp;&nbsp;
+                                &lt;option value="Safari"&gt;<br>
+                            &lt;/datalist&gt;
+                        <br>
+                        </code> gives &rarr;
+                        <br>
+                        <p>Enter your favorite browser name:</p>
+                        <input type="text" list="browsers">
+                        <datalist id="browsers">
+                            <option value="Firefox">
+                            <option value="Chrome">    
+                            <option value="Internet Explorer">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;fieldset&gt;</code></dt>
+                <dd>- Specifies a set of related form fields.  It is generally used to group logically related controls and labels within a web form. Grouping form controls makes it easier for users to understand their purpose and makes the documents more accessible.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form action="http://www.example.com/" method="post"&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;fieldset&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;legend&gt;Gender&lt;/legend&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;input type="radio" name="gender" value="male" id="male"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;label for="male"&gt;Male&lt;/label&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;input type="radio" name="gender" value="female" id="female"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;label for="female"&gt;Female&lt;/label&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;/fieldset&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <form action="http://www.example.com/" method="post">
+                            <fieldset>
+                                <legend>Gender</legend>
+                                <input type="radio" name="gender" value="male" id="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" value="female" id="female">
+                                <label for="female">Female</label>
+                            </fieldset>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;form&gt;</code></dt>
+                <dd>- Defines an HTML form for user input. Forms contain interactive controls which enable a user to submit information to a web server. An HTML form is used to capture user information such as username, password, address details, credit card information, and so on. Information can be captured in the form using many different form controls, such as <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;option&gt;</code>, <code>&lt;button&gt;</code>. There are also labeling and grouping controls, which include the <code>&lt;optgroup&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code>, and <code>&lt;label&gt;</code> elements.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form action="https://google.com/search" method="get"&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;p&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Search Google for: &lt;input type="text" name="q"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;button type="get" value="get"&gt;Submit&lt;/button&gt;<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;button type="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>  &nbsp;&nbsp;&nbsp;
+                                &lt;/p&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>                        
+                        gives &rarr;
+                        <br>
+                        <form action="https://google.com/search" method="get">
+                            <p>
+                                Search Google for: <input type="text" name="q">
+                                <button type="get" value="get">Submit</button>
+                                <button type="reset" value="Reset">Reset</button>
+                            </p>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;input&gt;</code></dt>
+                <dd>- Defines an input control. Creates interactive controls within a form. It varies in the way it appears and the attributes it uses or requires depending on the type attribute specified.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        a few of the types available:<br>
+                        <code>
+                            &lt;label for="textInput"&gt;Text&lt;/label&gt;<br>
+                            &lt;input type="text" name="textInput" id="textInput"&gt;<br>
+                            &lt;label for="checkboxInput"&gt;Checkbox&lt;/label&gt;<br>
+                            &lt;input type="checkbox" name="checkboxInput" id="checkboxInput"&gt;<br>
+                            &lt;label for="emailInput"&gt;E-mail&lt;/label&gt;<br>
+                            &lt;input type="emailInput" name="emailInput" id="emailInput"&gt;<br>
+                            &lt;label for="datetimeInput"&gt;Date/Time&lt;/label&gt;<br>
+                            &lt;input type="datetime-local" name="datetimeInput" id="datetimeInput"&gt;<br>
+                        </code> gives &rarr;
+                        <br>
+                        <label for="textInput">Text</label>
+                        <input type="text" name="textInput" id="textInput">
+                        <label for="checkboxInput">Checkbox</label>
+                        <input type="checkbox" name="checkboxInput" id="checkboxInput">
+                        <label for="emailInput">E-mail</label>
+                        <input type="emailInput" name="emailInput" id="emailInput">
+                        <label for="datetimeInput">Date/Time</label>
+                        <input type="datetime-local" name="datetimeInput" id="datetimeInput">
+                    </details>
+                </dd>
+
+                <dt><code>&lt;keygen&gt;</code></dt>
+                <dd>- Represents a control for generating a public-private key pair. When an HTML form is submitted, the browser will generate a key pair and store the private key in the browser's local key storage and send the public key to the server.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        hypothetical code is as follows:
+                        <br>
+                        <code>
+                            &lt;form action="process-key.php" method="post"&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;label&gt;Username: &lt;input type="text" name="username"&gt;&lt;/label&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;label&gt;Encryption: &lt;keygen name="key"&gt;&lt;/label&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;input type="submit" value="Submit"&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>
+                        however this will not not generate anything demonstrable without applicable php on a server.
+                    </details>
+                </dd>
+
+                <dt><code>&lt;label&gt;</code></dt>
+                <dd>- Defines a label for an <code>&lt;input&gt;</code>control. Each label element is associated with exactly one form control either by using the for attribute, or by placing the control element inside the label element.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;input type="radio" name="gender" value="male" id="male"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;label for="male"&gt;Male&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;label for="female"&gt; &lt;input type="radio" name="gender" value="female" id="female"&gt; Female&lt;/label&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <form>
+                            <input type="radio" name="gender" value="male" id="male">
+                            <label for="male">Male</label>
+                            <label for="female"><input type="radio" name="gender" value="female" id="female">Female</label>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;legend&gt;</code></dt>
+                <dd>Defines a caption for a <code>&lt;fieldset&gt;</code>element./dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form action="http://www.example.com/" method="post"&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;fieldset&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;legend&gt;Gender&lt;/legend&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;input type="radio" name="gender" value="male" id="male"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;label for="male"&gt;Male&lt;/label&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;input type="radio" name="gender" value="female" id="female"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;label for="female"&gt;Female&lt;/label&gt;<br> &nbsp;&nbsp;&nbsp;
+                                &lt;/fieldset&gt;<br>
+                            &lt;/form&gt;
+                            <br>
+                        </code> gives &rarr;
+                        <br>
+                        <form action="http://www.example.com/" method="post">
+                            <fieldset>
+                                <legend>Gender</legend>
+                                <input type="radio" name="gender" value="male" id="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" value="female" id="female">
+                                <label for="female">Female</label>
+                            </fieldset>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;meter&gt;</code></dt>
+                <dd>- Represents a scalar measurement within a known range, or a fractional value. This is also known as a gauge. <span>NOTE: not supported in IE/Edge.</span></dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;p&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;label for="polution"&gt;Polution: &lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;meter id="polution" value="0.3" high="0.75" low="0.5" optimum="0.25"&gt;0.3&lt;/meter&gt;<br>
+                            &lt;/p&gt;<br>
+                            &lt;p&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;label for="polution"&gt;Polution: &lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;meter id="polution" value="0.6" high="0.75" low="0.5" optimum="0.25"&gt;0.6&lt;/meter&gt;<br>
+                            &lt;/p&gt;<br>
+                            &lt;p&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;label for="polution"&gt;Polution: &lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;meter id="polution" value="0.9" high="0.75" low="0.5" optimum="0.25"&gt;0.9&lt;/meter&gt;<br>
+                            &lt;/p&gt;<br>
+                            &lt;p&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;label for="passingGrades"&gt;Passing Grades: &lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;meter id="passingGrades" value="17" min="0" max="32"&gt;17 out of 32 passed&lt;/meter&gt;<br>
+                            &lt;/p&gt;<br>
+                            &lt;p&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;label for="interest"&gt;Typical APR: &lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;meter id="interest" value="0.176"&gt;17.6%&lt;/meter&gt;<br>
+                            &lt;/p&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <p><label for="polution">Polution: </label>
+                            <meter id="polution" value="0.3" high="0.75" low="0.5" optimum="0.25">0.3</meter></p>
+                        <p><label for="polution">Polution: </label>
+                            <meter id="polution" value="0.6" high="0.75" low="0.5" optimum="0.25">0.6</meter></p>
+                        <p><label for="polution">Polution: </label>
+                            <meter id="polution" value="0.9" high="0.75" low="0.5" optimum="0.25">0.9</meter></p>
+                            <p><label for="passingGrades">Passing Grades: </label>
+                            <meter id="passingGrades" value="17" min="0" max="32">17 out of 32 passed</meter></p>
+                            <p><label for="interest">Typical APR: </label>
+                            <meter id="interest" value="0.176">17.6%</meter></p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;optgroup&gt;</code></dt>
+                <dd>- Defines a group of related options in a selection list. Groups options within a dropdown list defined by the <code>&lt;select&gt;</code> element. Each option offered by the dropdown list is defined by an <code>&lt;option&gt;</code> tag. A <code>&lt;select&gt;</code> element must contain at least one <code>&lt;option&gt;</code> element.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;select&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;optgroup label="Sports cars"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &lt;option value="ferrari"&gt;Ferrari&lt;/option>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &lt;option value="lamborghini"&gt;Lamborghini&lt;/option>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;/optgroup&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;optgroup label="Luxury cars"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &lt;option value="mercedes"&gt;Mercedes&lt;/option>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &lt;option value="bentley"&gt;Bentley&lt;/option>&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;/optgroup&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;/select&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <form>
+                            <select>
+                                <optgroup label="Sports cars">
+                                    <option value="ferrari">Ferrari</option>
+                                    <option value="lamborghini">Lamborghini</option>
+                                </optgroup>
+                                <optgroup label="Luxury cars">
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="bentley">Bentley</option>
+                                </optgroup>
+                            </select>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;option&gt;</code></dt>
+                <dd>Defines an option in a selection list. This element represents an option in a dropdown list defined by the <code>&lt;select&gt;</code> element. A dropdown list must contain at least one <code>&lt;option&gt;</code>element.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;select&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;option value="ferrari"&gt;Ferrari&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;option value="porsche"&gt;Porsche&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;/select&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <form>
+                            <select>
+                                <option value="ferrari">Ferrari</option>
+                                <option value="mercedes">Mercedes</option>
+                               <option value="porsche">Porsche</option>
+                            </select>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;select&gt;</code></dt>
+                <dd>- Defines a selection list within a <code>&lt;form&gt;</code>. The selection list typically displayed in the browser as a pull-down menu (i.e. a drop-down list) from which a user can select one or more options depending on its attributes. Each option offered by the selection list is defined by an <code>&lt;option&gt;</code> element.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;select&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;option value="ferrari"&gt;Ferrari&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;option value="porsche"&gt;Porsche&lt;/option&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;/select&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <form>
+                            <select>
+                                <option value="ferrari">Ferrari</option>
+                                <option value="mercedes">Mercedes</option>
+                               <option value="porsche">Porsche</option>
+                            </select>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;textarea&gt;</code></dt>
+                <dd>- Defines a multi-line text input control (text area). The text inside the textarea is usually rendered in a browser's default monospace (fixed-width) font such as Courier. A text area can hold unlimited number of characters.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;textarea cols="60" rows="5"&gt;write here...&lt;/textarea&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;/p&gt;<br>
+                            &lt;/form&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <form>
+                            <p>Leave your Comment: 
+                                <textarea cols="60" rows="5">write here...</textarea>
+                            </p>
+                        </form>
+                    </details>
+                </dd>
+            </dl>
+        </section>
+
+        <section id="formatingTags">
+            <h3>Formating Tags</h3>
+            <dl>
+                <dt><code>&lt;abbr&gt;</code></dt>
+                <dd>- Defines an abbreviated form of a longer word or phrase.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;&lt;abbr title="Hyper Text Markup Language"&gt;HTML&lt;/abbr&gt; is the publishing language of the World Wide Web.&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p><abbr title="Hyper Text Markup Language">HTML</abbr> is the publishing language of the World Wide Web.</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;address&gt;</code></dt>
+                <dd>- 	Specifies the author's contact information. This element is used to mark up the contact details for the author or owner of the document, so that the reader may use these details to contact the document's owner. It often appears at the beginning or end of a document.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;address&gt;
+                                Written by  &lt;a href="mailto:mrpwilliams80@gmail.com"&gt;Paul Williams &lt;/a&gt;.&lt;br&gt; 
+                                He is situated in:&lt;br&gt;
+                                Weston-Super-Mare, BS23 3SQ&lt;br&gt;
+                                UK
+                            &lt;/address&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <address>
+                            Written by <a href="mailto:mrpwilliams80@gmail.com">Paul Williams</a>.<br> 
+                            He is situated in:<br>
+                            Weston-Super-Mare, BS23 3SQ<br>
+                            UK
+                        </address>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;bdi&gt;</code></dt>
+                <dd>- This tag isolates a part of text that might be formatted in a different direction from other text outside it. This element is useful when embedding user-generated content with an unknown directionality.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <p>try selecting the text to give a better idea of how the browser is proccessing the flow from ltr then rtl and back again. In fact had to use the 'bdi' tags in the code segment to get that to flow properly, even the text editor in the visual studio code ide is confused by rtl text.</p>
+                        <code>
+                            &lt;li&gt;Arabic Username with 'bdi' &rarr; &lt;bd&gt;<bdi>إيان</bdi>&lt;/bdi&gt;: 90 points&lt;/li&gt;<br>
+                            &lt;li&gt;Arabic Username with 'bdi' &rarr; <bdi>إيان</bdi>: 90 points&lt;/li&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <li>Arabic Username with 'bdi' &rarr; <bdi>إيان</bdi>: 90 points</li>
+                        <li>Arabic Username without 'bdi' &rarr; إيان: 90 points</li>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;bdo&gt;</code></dt>
+                <dd>- short for bidirectional override, this tag is used to override the current text direction. You must specify the <code>dir</code> attribute on this element. This mandatory attribute specifies the base direction of the element's text content, which overrides the inherent directionality of characters as defined in [UNICODE].</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;The sequence "1-2-3-4-5" was reversed as: &lt;bdo dir="rtl"&gt;1-2-3-4-5&lt;/bdo&gt;&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>The sequence "1-2-3-4-5" was reversed as: <bdo dir="rtl">1-2-3-4-5</bdo></p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;blockquote&gt;</code></dt>
+                <dd> - Defines a long quotation. Usually, blockquotes are rendered visually by indentation.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;p&gt;To quote Nick Hornby, from A Long Way Down:<br>&nbsp;&nbsp;&nbsp;
+                                &lt;blockquote&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    People go on about places like Starbucks being unpersonal and all that, but what if that's what<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    you want? I'd be lost if people like that got their way and there was nothing unpersonal in the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    world.I like to know that there are big places without windows where no one gives a shit. You need<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    confidence to go into small places with regular customers... I'm happiest in the Virgin Megastore<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    and Borders and Starbucks and Pizza Express, where no one gives a shit and no one knows who you are.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    My mum and dad are always going on about how soulless those places are, and I'm like Der. That's the point.<br>&nbsp;&nbsp;&nbsp;
+                                &lt;/blockquote&gt;<br>
+                            thus, it appears, Nick feels there is a place for souless corparations in this world.&lt;/p&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <p>To quote Nick Hornby, from A Long Way Down:
+                            <blockquote>
+                                People go on about places like Starbucks being unpersonal and all that, but what if that's what you want? I'd be lost if people like that got their way and there was nothing unpersonal in the world. I like to know that there are big places without windows where no one gives a shit. You need confidence to go into small places with regular customers... I'm happiest in the Virgin Megastore and Borders and Starbucks and Pizza Express, where no one gives a shit and no one knows who you are. My mum and dad are always going on about how soulless those places are, and I'm like Der. That's the point.
+                            </blockquote>
+                        thus, it appears, Nick feels there is a place for souless corparations in this world.</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;cite&gt;</code></dt>
+                <dd>- Indicates a citation or reference to another source. Text inside the tag usually rendered in italics by the most of the browser, but this style can be overridden using CSS.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;"No! I am your father." &lt;cite&gt;- Darth Vader, Empire Strikes Back (1980)&lt;/cite&gt;&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>"No! I am your father." <cite>- Darth Vader, Empire Strikes Back (1980)</cite>.</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;code&gt;</code></dt>
+                <dd>- 	Specifies text as computer code. Represents a fragment of computer code — for example, a snippet of HTML or CSS, or some other programming language code.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;A segment of code follows: &lt;code&gt;this is code;&lt;/code&gt;. Except it wasn't really code.&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>A segment of code follows: <code>this is code;</code>. Except it wasn't really code.</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;del&gt;</code></dt>
+                <dd> -Specifies a block of deleted text. Short for delete, this tag is used to markup a range of text that has been deleted from a document. Browsers will normally render the deleted text as strike-through text, however you can overwrite this using CSS</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;del&gt;This text has been delted&lt;/del&gt;</code> gives &rarr;
+                        <br>
+                        <del>This text has been delted</del>>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;def&gt;</code></dt>
+                <dd>- Specifies a definition. Short for definition, this tag represents the defining instance of a term.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;&lt;def title="Hyper Text Markup Language"&gt;HTML&lt;/def&gt; is the publishing language of the World Wide Web.&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p><def title="Hyper Text Markup Language">HTML</def> is the publishing language of the World Wide Web.</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;em&gt;</code></dt>
+                <dd>- Specifies emphasized text. Although typically displayed as italic text, is used to provide somantic meaning</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;I &lt;em&gt;really&lt;/em&gt; need you to pay attention&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>I <em>really</em> need you to pay attention</p>>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;ins&gt;</code></dt>
+                <dd>- Defines a block of text that has been inserted into a document. Short for inserted, this tag specifies a block of inserted text. This tag is typically used to markup a range of text that has been added to the document. Browsers will normally render the inserted text as underlined text, however you can overwrite this using the CSS</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;li&gt;Wake up&lt;/li&gt;<br>
+                            &lt;li&gt;&lt;ins&gt;Get some more petrol&lt;/ins&gt;&lt;/li&gt;<br>
+                            &lt;li&gt;Take car to garage&lt;/li&gt;
+                        <br>
+                        </code> gives &rarr;
+                        <br>
+                        <li>Wake up</li>
+                        <li><ins>Get some more petrol</ins></li>
+                        <li>Take car to garage</li>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;kbd&gt;</code></dt>
+                <dd>- Specifies text as keyboard input. Short for keyboard, this tag specifies text as keyboard text. This tag indicates text to be entered by the user. Most browsers generally render the text enclosed by this element in a monospaced font, however you can overwrite its style with CSS.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;p&gt;Please, input "&lt;kdb&gt;Yes&lt;/kdb&gt;" or "&lt;kdb&gt;No&lt;/kdb&gt;"&lt;/p&gt;
+                        </code> gives &rarr;
+                        <br>
+                        <p>Please, input "<kbd>Yes</kbd>" or "<kbd>No</kbd>"</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;mark&gt;</code></dt>
+                <dd>- Defines a marked section of text. Represents text highlighted for reference purposes.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;mark&gt;This text is marked&lt;/mark&gt;</code> gives &rarr;
+                        <br>
+                        <mark>This text is marked</mark>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;output&gt;</code></dt>
+                <dd>- Represents the result of a calculation. Typically this element defines a region that will be used to display text output from some calculation that is usually performed by a client-side script (usually JavaScript).</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;form&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;input type="range" id="a" value="50"&gt; +<br>&nbsp;&nbsp;&nbsp;
+                                &lt;input type="number" id="b" value="100"&gt; =<br>&nbsp;&nbsp;&nbsp;
+                                &lt;output name="result" for="a b"&gt;&lt;/output&gt;<br>
+                            &lt;/form&gt;
+                        <br>
+                        </code> gives &rarr;
+                        <br>
+                        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                            <input type="range" id="a" value="50"> +
+                            <input type="number" id="b" value="100"> =
+                            <output name="result" for="a b"></output>
+                        </form>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;pre&gt;</code></dt>
+                <dd>- Defines a block of preformatted text. This element is commonly used to preserves spaces, line breaks, tabs, and other formatting characters in source markup that web browsers would otherwise ignore.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            <pre>
+&lt;pre&gt;This     text will keep    all 
+the     extra spaces
+and return sequences&lt;/pre&gt;
+&lt;p&gt;This     text will &lt;strong&gt;NOT&lt;/strong&gt; keep    all 
+the     extra spaces
+and return sequences&lt;/p&gt;
+                            </pre>
+                        </code>
+                        <!-- <br> -->
+                        gives &rarr;
+                        <br>
+<pre>This     text will keep    all 
+the     extra spaces
+and return sequences</pre>
+<p>This     text will <strong>NOT</strong> keep    all 
+the     extra spaces
+and return sequences</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;progress&gt;</code></dt>
+                <dd>- 	Represents the completion progress of a task. This element normally used to indicate how much of a task has been completed, such as loading something on a page or registration process. It is typically displayed as a progress bar and often marked as a percentage from 0 to 100%.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        usually combined with javascript to provide an animated visual indication of progress, this is for demonstration puprposes only. The span is included for browsers that do not support 'progress'<br>
+                        <code>&lt;p&gt;Progress: &lt;progress id="bar" value="25" max="100"&gt;&lt;span&gt;25&lt;/span&gt;%&lt;/progress&gt;&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>Progress: <progress id="bar" value="25" max="100"><span>25</span>%</progress></p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;q&gt;</code></dt>
+                <dd>- 	Defines a short inline quotation. It differs from <code>&lt;blockquote&gt;</code>, which is a block-level element used for longer quotations.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;Einstein reputedly said, &lt;q&gt;All religions, arts and sciences are branches of the same tree.&lt;/q&gt;&lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>Einstein reputedly said, <q>All religions, arts and sciences are branches of the same tree.</q></p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;rp&gt;</code></dt>
+                <dd>- 	Provides fall-back parenthesis for browsers that that don't support ruby annotations. Ruby annotations are used for showing pronounciation of East Asian characters, like Chinese or Japanese characters.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;ruby&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &amp;#28450; &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &amp;#23383; &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>
+                            &lt;/ruby&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        If browser supports ruby annotations<br>
+                        <ruby>
+                            &#28450; <rp>(</rp><rt>Kan</rt><rp>)</rp>
+                            &#23383; <rp>(</rp><rt>ji</rt><rp>)</rp>
+                        </ruby>
+                        <br>
+                        If browser does not support ruby annotation<br>
+                        &#28450; (Kan)
+                        &#23383; (Ji)
+                    </details>
+                </dd>
+
+                <dt><code>&lt;rt&gt;</code></dt>
+                <dd>- Defines the pronunciation of character presented in a ruby annotations. element is used within a <code>&lt;ruby&gt;</code> to define the pronunciation of character presented in a ruby annotations. This element is primarily used for showing pronunciation of characters in languages, like Chinese and Japanese Chinese.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;ruby&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &amp;#28450; &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &amp;#23383; &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>
+                            &lt;/ruby&gt;
+                        </code> gives &rarr;
+                        <br>
+                        <ruby>
+                            &#28450; <rp>(</rp><rt>Kan</rt><rp>)</rp>
+                            &#23383; <rp>(</rp><rt>ji</rt><rp>)</rp>
+                        </ruby>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;ruby&gt;</code></dt>
+                <dd>- Represents a ruby annotation. Ruby annotations are used for showing pronounciation of East Asian characters, like Chinese and Japanese Chinese. The element is used with the <code>&lt;rt&gt;</code> element to create annotations or pronunciation guides for words and phrases. The base text should be enclosed in a <code>&lt;ruby&gt;</code> tag; the annotation, enclosed in an <code>&lt;rt&gt;</code> tag, will appear as smaller text above the base text. The optional <code>&lt;rp&gt;</code> element can be used to wrap parentheses around the ruby text to indicate the presence of a ruby annotation for browsers that do not support this formatting. The following table summarizes the usages context and the version history of this tag.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;ruby&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &amp;#28450; &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &amp;#23383; &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>
+                            &lt;/ruby&gt;
+                        </code> gives &rarr;
+                        <br>
+                        <ruby>
+                            &#28450; <rp>(</rp><rt>Kan</rt><rp>)</rp>
+                            &#23383; <rp>(</rp><rt>ji</rt><rp>)</rp>
+                        </ruby>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;samp&gt;</code></dt>
+                <dd>- Specifies text as sample output from a computer program. Short for sample, this tag specifies text as sample code. It typically represents sample output from a computer programs, scripts, etc.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;If the browser display an error message such as "&lt;samp&gt;HTTP 404 - File not found&lt;/samp&gt;" you may simply have typed the incorrect url address.&lt;/p&gt;
+                        </code> gives &rarr;
+                        <br>
+                        <p>If the browser display an error message such as "<samp>HTTP 404 - File not found</samp>" you may simply have typed the incorrect url address.</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;small&gt;</code></dt>
+                <dd>- Displays text in a smaller size. The tag decreases the text font size by one size smaller than a document's base font size; for example, from medium to small, or from x-large to large. Each nested <code>&lt;small&gt;</code> element will further decrease the size by one size smaller. </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;small&gt;small &lt;small&gt;smaller &lt;small&gt;smallest&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;</code> gives &rarr;
+                        <br>
+                        <small>small <small>smaller <small>smallest</small></small></small>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;strong&gt;</code></dt>
+                <dd>- Indicate strongly emphasized text. Although this usually sets the text to bold, it is primarily used to convay somantic meaning.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;strong&gt;This text is strong.&lt;/strong&gt;</code> gives &rarr;
+                        <br>
+                        <strong>This text is strong.</strong>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;sub&gt;</code></dt>
+                <dd>- Defines subscripted text. Short for subscript, this tag renders enclosed text as subscript. Subscript text appears half a character's height below the baseline, and is most often used in mathematical (e.g. y = log<sub>a</sub >x) or chemical formulas, like H<sub>2</sub >O.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>Normal &lt;sub&gt;Subscript&lt;/sub&gt;</code> gives &rarr;
+                        <br>
+                        Normal <sub>Subscript</sub>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;sup&gt;</code></dt>
+                <dd>- Defines superscripted text. Short for subscript, this tag renders enclosed text as superscript. Superscript text appears half a character's height above the baseline, and is most often used in mathematical (e.g. y = x<sup>2</sup>), or scientific formulas (e.g. E = mc<sup>2</sup>).</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>Normal &lt;sup&gt;Superscript&lt;/sup&gt;</code> gives &rarr;
+                        <br>
+                        Normal <sup>Superscript</sup>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;var&gt;</code></dt>
+                <dd>- Defines a variable. Short for variable, this tag is used to indicate that the text is an instance of a variable or program argument.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;p&gt;A simple equation: &lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt; +2 &lt;/p&gt;</code> gives &rarr;
+                        <br>
+                        <p>A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;wbr&gt;</code></dt>
+                <dd> Represents a line break opportunity. Stands for Word Break Opportunity, the element specifies a position within text where the browser may optionally break a line if necessary.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>Loremipsumdolorsitametconsecteturadipisicingelitsolutaminusinperspiciatisutquamassumendalaboriosamessenonconsecteturfacilisdoloreeanamrepudiandaevoluptatumerrortemporeeiusfugaaliquid&lt;wbr&gt;loremipsumdolorsitametconsecteturadipisicingelitsolutaminusinperspiciatisutquamassumendalaboriosamessenonconsecteturfacilisdoloreeanamrepudiandaevoluptatumerrortemporeeiusfugaaliquid.</code> gives &rarr;
+                        <br>
+                        Loremipsumdolorsitametconsecteturadipisicingelitsolutaminusinperspiciatisutquamassumendalaboriosamessenonconsecteturfacilisdoloreeanamrepudiandaevoluptatumerrortemporeeiusfugaaliquid<wbr>loremipsumdolorsitametconsecteturadipisicingelitsolutaminusinperspiciatisutquamassumendalaboriosamessenonconsecteturfacilisdoloreeanamrepudiandaevoluptatumerrortemporeeiusfugaaliquid.
+                    </details>
+                </dd>
+            </dl>
+        </section>
+
+        <section id="listTags">
+            <h3>List Tags</h3>
+            <dl>
+                <dt><code>&lt;dd&gt;</code></dt>
+                <dd>- Specifies a definition for a term in a definition list. Short for definition description, this tag represents the description or definition of an item in a description list. This element can contain block-level elements such as headings, paragraphs, blockquotes, etc. as well as inline-level elements such as span, em, strong, etc.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;dt&gt;term&lt;/dt&gt;  &lt;dd&gt;definition&lt;/dd&gt;</code> gives &rarr;
+                        <br>
+                        <dt>term</dt><dd>– definition</dd>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;dl&gt;</code></dt>
+                <dd>- Defines a definition list. Short for definition list, this tag specifies a definition list. It is a list of terms with their associated definitions. A common use for this element is to implement a glossary. Definition lists vary only slightly from other types of lists in that list items consist of two parts: a term and a description.
+                    <li>The term is given by the <code>&lt;dt&gt;</code> element and can only contains inline-level elements.</li>
+                    <li>The description is given with a <code>&lt;dd&gt;</code> element that can contains block-level elements.</li></dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;dl&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;dt&gt;term1&lt;/dt&gt;&lt;dd&gt;definition1&lt;/dd&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;dt&gt;term2&lt;/dt&gt;&lt;dd&gt;definition2&lt;/dd&gt;<br>
+                            &lt;/dl&gt;
+                        <br>
+                        </code> gives &rarr;
+                        <br>
+                        <dl>
+                            <dt>term1</dt><dd>– definition1</dd>
+                            <dt>term2</dt><dd>– definition2</dd>
+                        </dl>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;dt&gt;</code></dt>
+                <dd>- Defines a term (an item) in a definition list. Short for definition term, this tag represent a term or an item in a definition list.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;dt&gt;term&lt;/dt&gt;  &lt;dd&gt;definition&lt;/dd&gt;</code> gives &rarr;
+                        <br>
+                        <dt>term</dt><dd>– definition</dd>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;li&gt;</code></dt>
+                <dd>- Defines a list item. Short for list item, this tag defines an individual list item within a list. Each list item usually rendered with a bullet (in unordered lists, defined by the <code>&lt;ul&gt;</code> tag) or a number or letter (in the case of ordered lists, defined by the <code>&lt;ol&gt;</code> tag). The appearance of bullet or the number can be controlled with the type attribute.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;li&gt;list item 1&lt;/li&gt;<br>
+                            &lt;li&gt;list item 2&lt;/li&gt;</code> gives &rarr;
+                        <br>
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;ol&gt;</code></dt>
+                <dd>- Defines an ordered list. Short for ordered list, this tag defines an ordered list of items. Each list item is defined by a <code>&lt;li&gt;</code> tag. Typically, ordered-list items are displayed with a number in front of it, but the numbering style can be controlled with CSS</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;ol&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;li&gt;list item 1&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;li&gt;list item 2&lt;/li&gt;<br>
+                        &lt;/ol&gt;</code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <ol>
+                            <li>list item 1</li>
+                            <li>list item 2</li>
+                        </ol>>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;ul&gt;</code></dt>
+                <dd>- Defines an unordered list. Short for unordered list, this tag defines an unordered list of items. Each list item is defined by a <code>&lt;li&gt;</code> tag. Typically, ordered-list items are displayed with a bullet in front of it, but the style can be controlled with CSS</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;li&gt;list item 1&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;li&gt;list item 2&lt;/li&gt;<br>
+                        &lt;/ul&gt;</code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <ul>
+                            <li>list item 1</li>
+                            <li>list item 2</li>
+                        </ul>
+                    </details>
+                </dd>
+            </dl>
+        </section>
+
+        <section id="tableTags">
+            <h3>Table Tags</h3>
+            <p>Tables should only be used for tabular information. If you just want to organise elements into a grid arrangement css grid or flexbox are more appropriate.</p>
+            <dl>
+                <dt><code>&lt;caption&gt;</code></dt>
+                <dd>- Defines the title of a table. The caption text should describe the nature of the table. The caption tag only permitted immediately after the <code>&lt;table&gt;</code> start tag. A <code>&lt;table&gt;</code> element may only contain one <code>&lt;caption&gt;</code> element.</dd>
+                <dt><code>&lt;table&gt;</code></dt>
+                <dd>- Defines a data table. It is used to represents data in a grid-like fashion (in rows and columns). However, if the data is not tabulated you should consider grid or flexbox in css.</dd>
+                <dt><code>&lt;tbody&gt;</code></dt>
+                <dd>- Groups a set of rows defining the main body of the table data. Short for table body, this element defines a table's body. It is used to group a set of rows defining the main body of the table data. It must appears as a child of a <code>&lt;table&gt;</code> element, after any <code>&lt;caption&gt;</code> and <code>&lt;thead&gt;</code> elements, and must contain at least one row, defined by the <code>&lt;tr&gt;</code> element.</dd>
+                <dt><code>&lt;td&gt;</code></dt>
+                <dd>- Defines a cell in a table. Short for table data, this tag defines a data cell in a table. A Table cells may contain two types of information: header information and data.
+                    <li>The <code>&lt;th&gt;</code> element defines a cell that contains header information.</li>
+                    <li>The <code>&lt;td&gt;</code> element defines a cell that contains data.</li>
+                This distinction enables web browser to render header and data cells distinctly, even in the absence of style sheets. For example, header cell text rendered with a bold font while text inside the data cell rendered as a regular text.</dd>
+                <dt><code>&lt;tfoot&gt;</code></dt>
+                <dd>- Groups a set of rows summarizing the columns of the table. Short for table foot, this defines a table's footer. It is used to group a set of rows summarizing the columns of the table. It must appears as a child of a <code>&lt;table&gt;</code> tag, after any <code>&lt;caption&gt;</code> and <code>&lt;thead&gt;</code> elements, but before any <code>&lt;tbody&gt;</code> and <code>&lt;tr&gt;</code> element. The <code>&lt;tfoot&gt;</code> element must contain at least one row, defined by the <tr> tag.</dd>
+                <dt><code>&lt;thead&gt;</code></dt>
+                <dd>- Groups a set of rows that describes the column labels of a table. Short for table head, this element defines a table's header. It is used to group a set of rows defining the header of the columns within the table. This element must appears as a child of a <code>&lt;table&gt;</code> element, after any <code>&lt;caption&gt;</code> elements, but before any <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code> and <code>&lt;tr&gt;</code> elements. The <code>&lt;thead&gt;</code> tag must contain at least one row, defined by the <code>&lt;tr&gt;</code> tag.</dd>
+                <dt><code>&lt;th&gt;</code></dt>
+                <dd>- Defines a header cell in a table. Short for table head, this tag defines a data cell in a table. A Table cells may contain two types of information: header information and data.
+                    <li>The <code>&lt;th&gt;</code> element defines a cell that contains header information.</li>
+                    <li>The <code>&lt;td&gt;</code> element defines a cell that contains data.</li>
+                This distinction enables web browser to render header and data cells distinctly, even in the absence of style sheets. For example, header cell text rendered with a bold font while text inside the data cell rendered as a regular text.</dd>
+                <dt><code>&lt;tr&gt;</code></dt>
+                <dd>- Defines a row of cells in a table. Short for table row, this element defines a row of cells in a table. The element acts as a container for table cells and contains one or more <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> elements.</dd>
+                <details>
+                    <summary>example</summary>
+                    <code>
+                        &lt;table&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;caption&gt;Table Title&lt;/caption&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;thead&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Column 1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Column 2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Column 2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;/thead&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;tfoot&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;td colspan="4"&gt;Copyright &amp;copy;  2020 UnecessaryCopyrightCo.&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;/tfoot&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;tbody&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Row 1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Col1, Row1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Col2, Row1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Col2, Row1&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Row 2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th rowspan="2"&gt;Col1, Rows 2 and 3&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Col2, Row2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Col2, Row2&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Row 3&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Col2, Row3&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;th&gt;Col2, Row3&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;/tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                            &lt;/tbody&gt;<br>
+                        &lt;/table&gt;<br>
+                    </code>
+                    <br>
+                    gives &rarr;
+                    <br>
+                    <table>
+                        <caption>Table Title</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                                <th>Column 3</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Copyright &copy;  2020 UnecessaryCopyrightCo.</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <th>Row 1</th>
+                                <td>Col1, Row1</td>
+                                <td>Col2, Row1</td>
+                                <td>Col3, Row1</td>
+                            </tr>
+                            <tr>
+                                <th>Row 2</th>
+                                <td rowspan="2">Col1, Rows 2 and 3</td>
+                                <td>Col2, Row2</td>
+                                <td>Col3, Row2</td>
+                            </tr>
+                            <tr>
+                                <th>Row 3</th>
+                                <td>Col2, Row3</td>
+                                <td>Col3, Row3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+            </dl>
+        </section>
+
+        <section id="scriptingTags">
+            <h3>Scripting Tags</h3>
+            <dl>
+                <dt><code>&lt;noscript&gt;</code></dt>
+                <dd>Defines alternative content to display when the browser does not have javascript enabled</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;script type="text/javascript"&gt;document.write("java script is enabled in your browser, plese disable it to see the 'noscript' message")&lt;/script&gt;<br>
+                            &lt;noscript&gt;javascript is disabled in your browser.&lt;/noscript&gt;
+                        </code> gives &rarr;
+                        <br>
+                        <script type="text/javascript">
+                            document.write("java script is enabled in your browser, plese disable it to see the 'noscript' message")
+                        </script>
+                        <noscript>javascript is disabled in your browser.</noscript>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;script&gt;</code></dt>
+                <dd>places script in the document for clientside proccessing. The tag is used to embed or reference an executable client-side script (such as JavaScript) within an HTML or XHTML document. It may appear any number of times in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code>of an HTML document. It either contains a series of scripting statements, or it points to an external script file (through the src attribute) that's processed on the client side (user's computer) to add interactivity or affect the behavior of web pages.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>&lt;script type="text/javascript"&gt;<br>&nbsp;&nbsp;&nbsp;
+                            var radius = 5;<br>&nbsp;&nbsp;&nbsp;
+                            var area = Math.PI*radius*radius;<br>&nbsp;&nbsp;&nbsp;
+                            document.write("The area of a circle with radius " + radius + " is " + area);<br>
+                        &lt;/script&gt;</code> gives &rarr;
+                        <br>
+                        <script type="text/javascript">
+                            var radius = 5;
+                            var area = Math.PI*radius*radius;
+                            document.write("The area of a circle with radius " + radius + " is " + area);
+                        </script>
+                    </details>
+                </dd>
+            </dl>
+        </section>
+
+        <section id="embededTags">
+            <h3>Embeded Content Tags</h3>
+            <dl>
+                <dt><code>&lt;area&gt;</code></dt>
+                <dd>- Defines a specific area within an image map. This defines a hot-spot region on an image, and associates it with a hypertext link. This element is used only within a <code>&lt;map&gt;</code> element.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;p&gt;Click a logo to see how it works&lt;/p&gt;<br>
+                            &lt;img src="file:///F:/Paul/Documents/webPortfolio//images/searchLogos.svg" alt="logos for three search engines: google, bing and yahoo." usemap="#searchLogos"&gt;<br>
+                            &lt;map name="searchLogos"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;area shape="circle" coords="47,47,47" href="http://www.google.com" alt="google logo"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;area shape="poly" coords="126,93, 104,77, 106,2, 126,8, 179,38, 179,61" href="http://www.bing.com" alt="bing logo"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;area shape="rect" coords="189,0, 283,94" href="http://www.yahoo.com" alt="yahoo logo"&gt;<br>
+                            &lt;/map&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <p>Click a logo to see how it works</p>
+                        <img src="file:///F:/Paul/Documents/webPortfolio/images/searchLogos.svg" alt="logos for three search engines: google, bing and yahoo." usemap="#searchLogos">
+                        <map name="searchLogos">
+                            <area shape="circle" coords="47,47,47" href="http://www.google.com" alt="google logo">
+                            <area shape="poly" coords="126,93, 104,77, 106,2, 126,8, 179,38, 179,61" href="http://www.bing.com" alt="bing logo">
+                            <area shape="rect" coords="189,0, 283,94" href="http://www.yahoo.com" alt="yahoo logo">
+                        </map>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;audio&gt;</code></dt>
+                <dd>- Embeds a sound, or an audio stream in an HTML document. Does not require any additional plug-ins like Flash player.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;audio controls="controls" src="file:///F:/Paul/Documents/webPortfolio/audio/tooCool.mp3"&gt;&lt;/audio&gt;&lt;br&gt;<br>
+                            &lt;cite&gt;<br>&nbsp;&nbsp;&nbsp;
+                                Too Cool by Kevin MacLeod&lt;br&gt;<br>&nbsp;&nbsp;&nbsp;
+                                Link: &lt;a href="https://incompetech.filmmusic.io/song/4534-too-cool/"&gt;"Too Cool" @ Incomptech&lt;/a&gt;&lt;br&gt;<br>&nbsp;&nbsp;&nbsp;
+                                License:  &lt;a href="http://creativecommons.org/licenses/by/4.0/"&gt;Creative Commons 4.0</a></cite><br>
+                            &lt;/cite&gt;
+                        </code> gives &rarr;
+                        <br>
+                        <audio controls="controls" src="file:///F:/Paul/Documents/webPortfolio/audio/tooCool.mp3"></audio><br>
+                        <cite>  Too Cool by Kevin MacLeod<br>
+                                Link: <a href="https://incompetech.filmmusic.io/song/4534-too-cool/">"Too Cool" @ Incomptech</a><br>
+                                License: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons 4.0</a></cite>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;canvas&gt;</code></dt>
+                <dd>- Defines a region in the document, which can be used to draw graphics on the fly via scripting (usually JavaScript). For example, it can be used to draw path and shapes, graphs or even perform animations.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;canvas id="myCanvas" width="300" height="200" style="border: 1px solid #000;"&gt;&lt;/canvas&gt;<br>
+                            &lt;script type="text/javascript"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                window.onload = function(){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    var canvas = document.getElementById("myCanvas");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    var context = canvas.getContext("2d");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    context.moveTo(50, 150);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    context.lineTo(250, 50);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    context.stroke();<br>&nbsp;&nbsp;&nbsp;
+                                };<br>
+                            &lt;/script&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <canvas id="myCanvas" width="300" height="200" style="border: 1px solid #000;"></canvas>
+                        <script type="text/javascript">
+                            window.onload = function(){
+                                var canvas = document.getElementById("myCanvas");
+                                var context = canvas.getContext("2d");
+                                context.moveTo(50, 150);
+                                context.lineTo(250, 50);
+                                context.stroke();
+                            };
+                        </script>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;embed&gt;</code></dt>
+                <dd>- Embeds external application, typically multimedia content like audio or video into an HTML document. </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;embed src="file:///F:/Paul/Documents/webPortfolio/animations/fireball.swf" width="340px" height="340px"&gt;<br>
+                            downloaded from &lt;a href="http://www.free-flash-animations.com" title="Free Flash Animations"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;img src="http://www.free-flash-animations.com/88x31.gif" style="border:1px solid #000000;" alt="Free Flash Animations" /&gt;<br>
+                            &lt;/a&gt;                            
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <embed src="file:///F:/Paul/Documents/webPortfolio/animations/fireball.swf" width="340px" height="340px">
+                        downloaded from <a href="http://www.free-flash-animations.com" title="Free Flash Animations">
+                            <img src="http://www.free-flash-animations.com/88x31.gif" style="border:1px solid #000000;" alt="Free Flash Animations" />
+                        </a>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;figcaption&gt;</code></dt>
+                <dd>- Defines a caption or legend for a figure.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;img src="file:///F:/Paul/Documents/webPortfolio/images/multicolorDrop640x480.jpg"&gt;<br>
+                            &lt;figcaption&gt;"Multi-Colour Drop" - Photo by &lt;a href="/photographer/wreckedm-50477"&gt;Palo Perez&lt;/a>&gt; from &lt;a href="https://freeimages.com/"&gt;FreeImages&lt;/a>&gt;&lt;/figcaption&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <img src="file:///F:/Paul/Documents/webPortfolio/images/multicolorDrop640x480.jpg">
+                        <figcaption>"Multi-Colour Drop" - Photo by <a href="/photographer/wreckedm-50477">Palo Perez</a> from <a href="https://freeimages.com/">FreeImages</a></figcaption>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;figure&gt;</code></dt>
+                <dd>- Represents a figure illustrated as part of the document. Represents a unit of content, optionally with a caption, that is self-contained and typically referenced as a single unit. Usually this is an image, an illustration, a diagram, or a code snippet that is referenced in the main text.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;figure&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;figcaption&gt;fig. 1-1: Calculating Required String Tension for Centripetal Force&lt;/figcaption&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;img src="file:///F:/Paul/Documents/webPortfolio/images/centripetal.png" alt="diagram showing the calculation for required string tension during centripetal force"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;cite&gt;>downloaded from &lt;a href="http://hyperphysics.phy-astr.gsu.edu/hbase/cf.html"&gt;HyperPhysics&lt;/a&gt;&lt;/cite&gt;<br>
+                            &lt;/figure&gt;                         
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <figure>
+                            <figcaption>fig. 1-1: Calculating Required String Tension for Centripetal Force</figcaption>
+                            <img src="file:///F:/Paul/Documents/webPortfolio/images/centripetal.png" alt="diagram showing the calculation for required string tension during centripetal force">
+                            <cite>downloaded from <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/cf.html">HyperPhysics</a></cite>
+                        </figure>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;iframe&gt;</code></dt>
+                <dd>- Displays a URL in an inline frame. Short for inline frame, this tag defines an inline frame that contains external objects including other web page.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;iframe src="http://www.bing.com/" width="100%" height="400" scrolling="auto"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;p&gt;[Your browser does not support frames or is currently configured not to display frames. However, you may visit &lt;a href="http://www.bing.com/"&gt;the related document.&lt;/a&gt;]&lt;/p&gt;<br>
+                            &lt;/iframe&gt;                            
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <iframe src="http://www.bing.com/" width="100%" height="400" scrolling="auto">
+                            <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="http://www.bing.com/">the related document.</a>]</p>
+                        </iframe>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;img&gt;</code></dt>
+                <dd>- Displays an inline image. short for image) tag defines an image in an HTML document. Images are not directly inserted into the document; they are linked to the HTML pages. The <code>&lt;img&gt;</code> element creates a holding space to embed the referenced image designated by the src attribute.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;img src="file:///F:/Paul/Documents/webPortfolio/searchLogos.svg" alt="logos for the google, bing and yahoo search engines"&gt;                      
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <img src="file:///F:/Paul/Documents/webPortfolio/images/searchLogos.svg" alt="logos for the google, bing and yahoo search engines">
+                    </details>
+                </dd>
+
+                <dt><code>&lt;map&gt;</code></dt>
+                <dd>- Defines a client-side image-map. An image map is a list of coordinates relating to a specific image, created in order to hyperlink areas of the image to various destinations (as opposed to a normal image link, in which the entire area of the image links to a single destination). For example, a map of the world may have each country hyperlinked to further information about that country. The intention of an image map is to provide an easy way of linking various parts of an image without dividing the image into separate image files.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;p&gt;Click a logo to see how it works&lt;/p&gt;<br>
+                            &lt;img src="file:///F:/Paul/Documents/webPortfolio//images/searchLogos.svg" alt="logos for three search engines: google, bing and yahoo." usemap="#searchLogos"&gt;<br>
+                            &lt;map name="searchLogos"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;area shape="circle" coords="47,47,47" href="http://www.google.com" alt="google logo"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;area shape="poly" coords="126,93, 104,77, 106,2, 126,8, 179,38, 179,61" href="http://www.bing.com" alt="bing logo"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;area shape="rect" coords="189,0, 283,94" href="http://www.yahoo.com" alt="yahoo logo"&gt;<br>
+                            &lt;/map&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <p>Click a logo to see how it works</p>
+                        <img src="file:///F:/Paul/Documents/webPortfolio/images/searchLogos.svg" alt="logos for three search engines: google, bing and yahoo." usemap="#searchLogos">
+                        <map name="searchLogos">
+                            <area shape="circle" coords="47,47,47" href="http://www.google.com" alt="google logo">
+                            <area shape="poly" coords="126,93, 104,77, 106,2, 126,8, 179,38, 179,61" href="http://www.bing.com" alt="bing logo">
+                            <area shape="rect" coords="189,0, 283,94" href="http://www.yahoo.com" alt="yahoo logo">
+                        </map>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;object&gt;</code></dt>
+                <dd>- Defines an embedded object. It is used to include a variety of different kinds of media files into a document such as videos, audio, Java applets, ActiveX, PDF document, Flash animations or even images. You can also use the <code>&lt;object&gt;</code> element to embed another webpage into your HTML document. This tag is 'superior' to <code>&lt;embed&gt;</code> as the specification allows for the ability to show fallback content.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            <code>
+                                &lt;object data="file:///F:/Paul/Documents/webPortfolio/animations/fireball.swf" width="340px" height="340px"&gt;Your browser does not support this content&lt;/object&gt;<br>
+                                downloaded from &lt;a href="http://www.free-flash-animations.com" title="Free Flash Animations"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                    &lt;img src="http://www.free-flash-animations.com/88x31.gif" style="border:1px solid #000000;" alt="Free Flash Animations" /&gt;<br>
+                                &lt;/a&gt;                            
+                            </code>                     
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <object data="file:///F:/Paul/Documents/webPortfolio/animations/fireball.swf" width="340px" height="340px">Your browser does not support this content</object>
+                            downloaded from <a href="http://www.free-flash-animations.com" title="Free Flash Animations">
+                                <img src="http://www.free-flash-animations.com/88x31.gif" style="border:1px solid #000000;" alt="Free Flash Animations" />
+                            </a>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;param&gt;</code></dt>
+                <dd>Defines a parameter for an object or applet element. Short for parameter, this tag defines parameters to be passed to an embedded object at run-time defined by the <code>&lt;object&gt;</code> tag. Any number of <code>&lt;param&gt;</code> elements may appear inside an <code>&lt;object&gt;</code> element, in any order, but must be placed at the start of the content. A full list of param values is defined by the object itself</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;object type="application/x-shockwave-flash" width="170px" height="170px"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;param name="src" value="file:///F:/Paul/Documents/webPortfolio/animations/fireball.swf"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;param name="wmode" value="transparent"&gt;<br>
+                            &lt;/object&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <object type="application/x-shockwave-flash" width="170px" height="170px">
+                            <param name="src" value="file:///F:/Paul/Documents/webPortfolio/animations/fireball.swf">
+                            <param name="wmode" value="transparent">
+                        </object>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;source&gt;</code></dt>
+                <dd>- Defines alternative media resources for the media elements like <code>&lt;audio&gt;</code> or <code>&lt;video&gt;</code>. </dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <p><strong>NOTE: this only works as the base url was set to TutorialRepublic earlier in the document.</strong></p>
+                        <code>
+                            &lt;video controls="controls"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;source src="/examples/video/shuttle.mp4" type="video/mp4"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;source src="/examples/video/shuttle.ogv" type="video/ogg"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                Your browser does not support the HTML5 Video element.<br>
+                            &lt;/video&gt;
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <video controls="controls">
+                            <source src="/examples/video/shuttle.mp4" type="video/mp4">
+                            <source src="/examples/video/shuttle.ogv" type="video/ogg">
+                            Your browser does not support the HTML5 Video element.
+                        </video>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;time&gt;</code></dt>
+                <dd>- Represents a time and/or date. This element is intended as a way to encode dates and times in a machine-readable format, so that user agents can offer to add event reminders such as birthdays and anniversaries, or any event scheduling for user's calendar.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <code>
+                            &lt;p&gt;Most people consider &lt;time&gt;5:00 am&lt;/time&gt; very early.&lt;/p&gt;<br>
+                            &lt;p&gt;&lt;time datetime="2020-06-23 05:00"&gt;that time on the 23&lt;sup&gt;rd&lt;/sup&gt; of June this year&lt;/time&gt;.&lt;/p&gt;<br>
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <p>Most people consider <time >5:00 am</time> very early.</p>
+	                    <p>nevertheless, I somehow have an appointment for <time datetime="2020-06-23 05:00">that time on the 23<sup>rd</sup> of June this year</time>.</p>
+                    </details>
+                </dd>
+
+                <dt><code>&lt;video&gt;</code></dt>
+                <dd>- Embeds video content in an HTML document. This does not require an additional plugin, like Flash player. Support for the element varies accross browsers. At the moment, there are three main video formats supported for the element: MP4, Ogg and WebM.</dd>
+                <dd>
+                    <details>
+                        <summary>example</summary>
+                        <p>The course bellow is not free, nor endorsed. It was chosen as they did not hide the source of the mp4 file well enough, enabling me to embed using the <code>&lt;video&gt;</code> tag rather than <code>&lt;iframes&gt;</code> without having to download and host the file myself.</p>
+                        <p>There are plenty of free courses available with a simple internet search (for example: there are free videos on <a href="http://www.youtube.com">YouTube</a>, <a href="https://www.freecodecamp.org/">Free Code Camp</a> offers completely free writern tutorials and <a href="https://www.udemy.com/">Udemy</a> offer a range of free and paid courses, usually with video tuition). Or, if a structured course is not your thing, there are also plenty of free references available (for example: <a href="https://www.tutorialrepublic.com/">TutorialRepublic</a> or <a href="https://www.w3schools.com/">w3Schools</a>, both of which also offer tutorials as well as in-depth reference for the many HTML tags).</p>
+                        <p>I cannot recomend paying to simply learn html. If a course comes with acreditation, that is another mater - one cannot expect a meaningful qualification for free. However, please do your own research as to which, if any, qualifications are actually meaningful in your chosen end proffesion; I lack the relevent experience and knowledge to advise.</p>
+                        <code>
+                            &lt;a href="https://webdesign.tutsplus.com/courses/start-here-learn-html-basics"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                &lt;video controls="controls" src="https://embedwistia-a.akamaihd.net/deliveries/91d6cf2f66e64a4cc817d905f106f2cf54b051da/file.mp4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Your browser does not support the HTML5 Video element.<br>&nbsp;&nbsp;&nbsp;
+                                &lt;/video&gt;<br>
+                            &lt;/a&gt;<br>
+                        </code>
+                        <br>
+                        gives &rarr;
+                        <br>
+                        <a href="https://webdesign.tutsplus.com/courses/start-here-learn-html-basics">
+                            <video controls="controls" src="https://embedwistia-a.akamaihd.net/deliveries/91d6cf2f66e64a4cc817d905f106f2cf54b051da/file.mp4">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                        </a>
+                    </details>
+                </dd>
+            </dl>
+        </section>
+
+    </body>
+</html>
